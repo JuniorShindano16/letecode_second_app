@@ -1,0 +1,139 @@
+{
+  "title": "Hello World!",
+  "@title": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "archived": "Archived",
+   "@archived": {
+      "description": "Chats archived by the user"
+   },
+
+   "recentUpdates": "Recent Updates",
+    "@recentUpdates": {
+       "description": "Chats archived by the user"
+    },
+
+
+  "newCommunity": "New community",
+        "@recentUpdates": {
+           "description": "Chats archived by the user"
+        },
+
+  "filterAll": "All",
+  "@filterAll": {
+    "description": "Label for displaying all items"
+  },
+
+  "filterUnread": "Unread",
+  "@filterUnread": {
+    "description": "Label for unread messages"
+  },
+
+  "filterFavourites": "Favourites",
+  "@filterFavourites": {
+    "description": "Label for favourite items"
+  },
+
+  "filterGroups": "Groups",
+  "@filterGroups": {
+    "description": "Label for group chats or communities"
+  },
+
+  "chats": "Chats",
+  "@chats": {
+    "description": "Label for chat conversations"
+  },
+
+  "updates": "Updates",
+  "@updates": {
+    "description": "Label for recent updates"
+  },
+
+  "communities": "Communities",
+  "@communities": {
+    "description": "Label for communities"
+  },
+
+  "calls": "Calls",
+  "@calls": {
+    "description": "Label for call history"
+  },
+
+  "myStatus": "My Status",
+  "@myStatus": {
+    "description": "User's own status label"
+  },
+
+  "justNow": "Just now",
+  "@justNow": {
+    "description": "Label indicating a very recent time"
+  },
+
+  "minutesAgo": "minutes ago",
+  "@minutesAgo": {
+    "description": "Label indicating time passed in minutes"
+  },
+
+  "newCommunity": "New community",
+  "@newCommunity": {
+    "description": "Label for creating a new community"
+  },
+
+  "announcement": "Announcement",
+  "@announcement": {
+    "description": "Label for announcements"
+  },
+
+  "viewAll": "View all",
+  "@viewAll": {
+    "description": "Label for viewing all items"
+  },
+
+  "addFavourite": "Add favourite",
+  "@addFavourite": {
+    "description": "Label for adding to favourites"
+  },
+
+  "recent": "Recent",
+  "@recent": {
+    "description": "Label for recent items"
+  },
+
+  "today": "Today",
+  "@today": {
+    "description": "Label for current day"
+  },
+
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "Label for the day before"
+  },
+
+  "month": "Month",
+  "@month": {
+    "description": "Label for a calendar month"
+  },
+    "notificationCount": "{count, plural, =0{No notifications} =1{1 notification} other{{count} notifications}}",
+    "@notificationCount": {
+      "description": "Shows the number of notifications",
+      "placeholders": {
+        "count": {
+          "type": "int",
+          "example": "2"
+        }
+      }
+    },
+
+   "minutesCount": "{count, plural, =0{No minutes} =1{1 minute} other{{count} minutes}}",
+   "@minutesCount": {
+     "description": "Label indicating a number of minutes",
+     "placeholders": {
+       "count": {
+         "type": "int",
+         "example": "5"
+       }
+     }
+   }
+
+}

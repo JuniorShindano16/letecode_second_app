@@ -6,6 +6,13 @@ final darkTheme = ThemeData(
     seedColor: Colors.white60,
   ),
   scaffoldBackgroundColor: Color(0xFF121212),
+    bottomNavigationBarTheme:  BottomNavigationBarThemeData(
+      backgroundColor: Color(0xFF1F1F1F),
+      selectedItemColor: Colors.greenAccent,
+      unselectedItemColor: Colors.grey,
+      selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+      unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
+    ),
   appBarTheme: AppBarTheme(
     backgroundColor: Color(0xFF1F1F1F),
     titleTextStyle: TextStyle(
@@ -13,7 +20,9 @@ final darkTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.w600,
     ),
-  ),
+  ),iconTheme: const IconThemeData(
+  color: Colors.white,
+),
   textTheme: TextTheme(
     displayLarge: TextStyle(
       fontSize: 32,
@@ -34,7 +43,11 @@ final darkTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.w600,
       color: Colors.white70,
-    ),
+    ),titleSmall:TextStyle (
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: Colors.grey
+  ),
     bodyLarge: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w500,
@@ -51,5 +64,6 @@ final darkTheme = ThemeData(
       color: Colors.white,
     ),
   ),
+    cardColor: Colors.black
 
 );

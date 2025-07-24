@@ -14,7 +14,9 @@ final lightTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.w600,
     ),
-  ),
+  ),iconTheme: const IconThemeData(
+  color: Colors.black,
+),
   textTheme: const TextTheme(
     displayLarge: TextStyle(
       fontSize: 32,
@@ -35,7 +37,11 @@ final lightTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.w600,
       color: Colors.black,
-    ),
+    ),titleSmall:TextStyle (
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: Colors.blueGrey
+  ),
     bodyLarge: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w500,
@@ -52,6 +58,13 @@ final lightTheme = ThemeData(
       color: Colors.black,
     ),
   ),
-
+cardColor: Colors.white,
+  bottomNavigationBarTheme:  BottomNavigationBarThemeData(
+    backgroundColor: Colors.white,
+    selectedItemColor: Colors.green,
+    unselectedItemColor: Colors.grey,
+    selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+    unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
+  ),
 
 );

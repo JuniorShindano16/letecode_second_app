@@ -1,0 +1,138 @@
+{
+  "title": "Bonjour le monde !",
+  "@title": {
+    "description": "La salutation traditionnelle du nouveau programmeur"
+  },
+
+  "archived": "Archivées",
+     "@archived": {
+        "description": "Discutions archivées par l'utilisateur"
+   },
+
+     "newCommunity": "Nouvelle Communauté",
+           "@recentUpdates": {
+              "description": "Chats archived by the user"
+           },
+
+   "recentUpdates": "Ajoutés récemment",
+       "@recentUpdates": {
+          "description": "Chats archived by the user"
+       },
+
+
+  "filterAll": "Tous",
+  "@filterAll": {
+    "description": "Libellé pour afficher tous les éléments"
+  },
+
+  "filterUnread": "Non lus",
+  "@filterUnread": {
+    "description": "Libellé pour les messages non lus"
+  },
+
+  "filterFavourites": "Favoris",
+  "@filterFavourites": {
+    "description": "Libellé pour les éléments favoris"
+  },
+
+  "filterGroups": "Groupes",
+  "@filterGroups": {
+    "description": "Libellé pour les groupes de discussion ou communautés"
+  },
+
+  "chats": "Discussions",
+  "@chats": {
+    "description": "Libellé pour les conversations de chat"
+  },
+
+  "updates": "Mises à jour",
+  "@updates": {
+    "description": "Libellé pour les mises à jour récentes"
+  },
+
+  "communities": "Communautés",
+  "@communities": {
+    "description": "Libellé pour les communautés"
+  },
+
+  "calls": "Appels",
+  "@calls": {
+    "description": "Libellé pour l’historique des appels"
+  },
+
+  "myStatus": "Mon statut",
+  "@myStatus": {
+    "description": "Libellé pour le statut de l’utilisateur"
+  },
+
+  "justNow": "À l’instant",
+  "@justNow": {
+    "description": "Indique un moment très récent"
+  },
+
+  "minutesAgo": "il y a quelques minutes",
+  "@minutesAgo": {
+    "description": "Indique le temps écoulé en minutes"
+  },
+
+  "newCommunity": "Nouvelle communauté",
+  "@newCommunity": {
+    "description": "Libellé pour créer une nouvelle communauté"
+  },
+
+  "announcement": "Annonce",
+  "@announcement": {
+    "description": "Libellé pour les annonces"
+  },
+
+  "viewAll": "Tout voir",
+  "@viewAll": {
+    "description": "Libellé pour afficher tous les éléments"
+  },
+
+  "addFavourite": "Ajouter aux favoris",
+  "@addFavourite": {
+    "description": "Libellé pour ajouter un élément aux favoris"
+  },
+
+  "recent": "Récent",
+  "@recent": {
+    "description": "Libellé pour les éléments récents"
+  },
+
+  "today": "Aujourd’hui",
+  "@today": {
+    "description": "Libellé pour le jour en cours"
+  },
+
+  "yesterday": "Hier",
+  "@yesterday": {
+    "description": "Libellé pour la veille"
+  },
+
+  "month": "Mois",
+  "@month": {
+    "description": "Libellé pour un mois du calendrier"
+  },
+
+    "notificationCount": "{count, plural, =0{Aucune notification} =1{1 notification} other{{count} notifications}}",
+    "@notificationCount": {
+      "description": "Affiche le nombre de notifications",
+      "placeholders": {
+        "count": {
+          "type": "int",
+          "example": "2"
+        }
+      }
+    },
+     "minutesCount": "{count, plural, =0{No minutes} =1{1 minute} other{{count} minutes}}",
+      "@minutesCount": {
+        "description": "Label indicating a number of minutes",
+        "placeholders": {
+          "count": {
+            "type": "int",
+            "example": "5"
+          }
+        }
+      }
+}
