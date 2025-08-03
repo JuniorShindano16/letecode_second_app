@@ -1,0 +1,64 @@
+Animer les bulles de messages
+
+✅ Étape 1 : Ajouter un widget Draggable autour de chaque DiscussionBulleWidget
+Dans ton SliverChildBuilderDelegate, enveloppe chaque bulle dans un LongPressDraggable.
+
+dart
+Copier
+Modifier
+return LongPressDraggable(
+  axis: Axis.horizontal, // Limite le mouvement horizontalement
+  data: data,
+  feedback: Material(
+    color: Colors.transparent,
+    child: DiscussionBulleWidget(
+      message: data['message'],
+      time: data['time'],
+      isSender: data['isSender'],
+      received: data['received'],
+      read: data['read'],
+    ),
+  ),
+  childWhenDragging: Opacity(
+    opacity: 0.3,
+    child: DiscussionBulleWidget(
+      message: data['message'],
+      time: data['time'],
+      isSender: data['isSender'],
+      received: data['received'],
+      read: data['read'],
+    ),
+  ),
+  child: DiscussionBulleWidget(
+    message: data['message'],
+    time: data['time'],
+    isSender: data['isSender'],
+    received: data['received'],
+    read: data['read'],
+  ),
+);
+
+✅ Étape 2 : Comportement optionnel lors du dépôt (si besoin)
+Si tu veux définir une zone de dépôt (par exemple pour "supprimer un message" ou "réagir à un message glissé"), utilise un DragTarget. Exemple :
+
+dart
+Copier
+Modifier
+DragTarget<Map<String, dynamic>>(
+  builder: (context, candidateData, rejectedData) {
+    return Container(
+      height: 100,
+      width: double.infinity,
+      color: Colors.red.withOpacity(0.2),
+      child: Center(child: Text("Glisse ici pour supprimer")),
+    );
+  },
+  onAccept: (data) {
+    setState(() {
+      messages.remove(data);
+    });
+  },
+),
+
+1)MainCreen (index)(0=chat,, 2= story,1=community, 3= calls)
+2)conversation

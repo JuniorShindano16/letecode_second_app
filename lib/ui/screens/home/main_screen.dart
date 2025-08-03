@@ -6,17 +6,20 @@ import 'package:todo_management/ui/screens/home/story_screen.dart';
 
 import 'chat_screen.dart';
 
-class MainScreenWidget extends StatefulWidget {
-  const MainScreenWidget({Key? key}) : super(key: key);
+class MainScreen extends StatefulWidget {
+
+  final int? index;
+  const MainScreen({ this.index,super.key});
 
   @override
-  State<MainScreenWidget> createState() => _MainScreenWidgetState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainScreenWidgetState extends State<MainScreenWidget> {
+class _MainScreenState extends State<MainScreen> {
 
   final pageController = PageController(initialPage: 0);
   int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     List<BottomNavigationBarItem> items = [
@@ -53,7 +56,7 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex: currentIndex,
+        currentIndex: widget.index == null ? currentIndex : widget.index ?? 0,
         onTap: (index) {
           setState(() {
             currentIndex = index;
@@ -72,25 +75,3 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
 }
 
 
-/*bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Theme.of(
-          context,
-        ).bottomNavigationBarTheme.selectedItemColor,
-        unselectedItemColor: Theme.of(
-          context,
-        ).bottomNavigationBarTheme.unselectedItemColor,
-        backgroundColor: Theme.of(
-          context,
-        ).bottomNavigationBarTheme.backgroundColor,
-        selectedLabelStyle: Theme.of(context).textTheme.labelLarge,
-        unselectedLabelStyle: Theme.of(context).textTheme.bodyMedium,
-        items: items,
-        onTap: (index) {
-          pageController.animateToPage(
-            index,
-            duration: Duration(milliseconds: 300),
-            curve: Curves.ease,
-          );
-        },
-      ),*/

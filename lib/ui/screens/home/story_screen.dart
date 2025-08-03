@@ -3,9 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:todo_management/l10n/app_localizations.dart';
 import 'package:todo_management/ui/widgets/all_widgets_file.dart';
+import 'package:todo_management/ui/widgets/item_story_widget.dart';
+
 
 class StoryScreen extends StatefulWidget {
-  const StoryScreen({Key? key}) : super(key: key);
+  const StoryScreen({super.key});
 
   @override
   State<StoryScreen> createState() => _StoryScreenState();
@@ -38,9 +40,10 @@ class _StoryScreenState extends State<StoryScreen> {
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,spacing: 10,
             children: [
               Text("Status", style: Theme.of(context).textTheme.titleMedium,),
-              StoryItem(path: "assets/eminem.jpg",name: AppLocalizations.of(context)!.myStatus ,context: context ,time: 2 , ),
+              ItemStoryWidget(path: "assets/eminem.jpg", name: AppLocalizations.of(context)!.myStatus, time: 3),
+
               Text(AppLocalizations.of(context)!.recentUpdates, style: Theme.of(context).textTheme.titleSmall,),
-              StoryItem(path: "assets/eminem.jpg",name: "Mon Coeur ❤️" ,context: context ,time: 1 , ),
+              ItemStoryWidget(path: "assets/eminem.jpg", name: AppLocalizations.of(context)!.myStatus, time: 1),
             ],
           ),
         ),
