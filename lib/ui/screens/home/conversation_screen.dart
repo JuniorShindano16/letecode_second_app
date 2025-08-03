@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_management/ui/widgets/all_widgets_file.dart';
 import 'package:todo_management/ui/widgets/discussion_bulle_widget.dart';
@@ -274,7 +275,9 @@ class _ConversationScreenState extends State<ConversationScreen> {
                                 'read': false,
                               };
 
-                              print (newMessage);
+                              if (kDebugMode) {
+                                print (newMessage);
+                              }
                               setState(() {
                                 messages.add(newMessage);
                                 _controller.text = "";
